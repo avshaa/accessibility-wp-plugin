@@ -44,7 +44,8 @@ node_modules
 !/wp-content/plugins/.gitkeep
 !/wp-content/mu-plugins/.gitkeep
 !/wp-content/uploads/.gitkeep
-
+!/wp-content/plugins/thetwoaccessibility
+!/wp-content/plugins/thetwoaccessibility/*
 # File system junk files
 Desktop.ini
 Thumbs.db
@@ -54,6 +55,7 @@ Thumbs.db
 .Trashes
 .apdisk
 .fseventsd
+*.zip
 
 # Editor files
 *.sublime-*
