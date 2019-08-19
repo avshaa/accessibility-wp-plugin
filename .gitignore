@@ -46,6 +46,8 @@ node_modules
 !/wp-content/uploads/.gitkeep
 !/wp-content/plugins/thetwoaccessibility
 !/wp-content/plugins/thetwoaccessibility/*
+/wp-content/plugins/thetwoaccessibility/*.zip
+!/wp-content/plugins/thetwoaccessibility/languages/*
 # File system junk files
 Desktop.ini
 Thumbs.db

@@ -259,8 +259,7 @@ class Thetwoaccessibility_OptionsManager
             $pluginName,
             'administrator',
             $pluginName, //get_class($this),
-            array(&$this, 'settingsPage'),
-            'dashicons-products'
+            array(&$this, 'settingsPage')
         ); // if you call 'plugins_url; be sure to "require_once" it
 
         //call register settings function

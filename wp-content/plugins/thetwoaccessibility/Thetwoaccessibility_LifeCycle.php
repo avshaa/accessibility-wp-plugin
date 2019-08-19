@@ -82,11 +82,13 @@ class Thetwoaccessibility_LifeCycle extends Thetwoaccessibility_InstallIndicator
     public function addActionsAndFilters()
     {
 
-        add_action('wp_footer', array(&$this, 'include_button'));
+        add_action('wp_footer', array(&$this, 'include_panel'));
 
-        if ($this->getOption('accessibility_on_menu_end') !== "none") {
+        if ($this->getOption('accessibility_on_menu_end') !== "none" && $this->getOption('display_accessibility_button') == "Menu") {
 
             add_filter('wp_nav_menu_items', array(&$this, 'menu_button'), 10, 2);
+        } else {
+            add_action('wp_footer', array(&$this, 'include_absolute_button'));
         }
     }
 
@@ -96,14 +98,19 @@ class Thetwoaccessibility_LifeCycle extends Thetwoaccessibility_InstallIndicator
         $name = get_registered_nav_menus()[$location];
 
         if ($this->getOption('accessibility_on_menu_end') == $name) {
-            $items .= '<li id="menu-item"><a href="#" id="accessibility-button" class="open-accessibility" data-state="closed"><i class="fas fa-universal-access"></i></a></li>';
+            $items .= '<li id="menu-item"><a href="#" id="accessibility-button" class="open-accessibility" data-state="closed"><i class="' . $this->getOption('button_fa_icon', 'fas fa-universal-access') . '"></i></a></li>';
         }
         return $items;
     }
 
-    public function include_button()
+    public function include_panel()
     {
-        include('content-thetwoaccessibility.php');
+        include('thetwoaccessibility_frontPanel.php');
+    }
+
+    public function include_absolute_button()
+    {
+        include('thetwoaccessibility_frontButton.php');
     }
     /**
      * See: http://plugin.michael-simpson.com/?page_id=101

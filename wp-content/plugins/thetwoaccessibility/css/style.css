@@ -1,4 +1,15 @@
 /*********** thetwoaccessibility *****************/
+.accessibility-button-absolute {
+  max-height: 50px;
+  max-width: 50px;
+  position: absolute; }
+  .accessibility-button-absolute > div {
+    cursor: pointer;
+    height: 100%;
+    line-height: 50px; }
+    .accessibility-button-absolute > div i {
+      font-size: 50px; }
+
 .accessibility-panel {
   position: absolute;
   top: calc( 100% + 15px);
@@ -10,7 +21,6 @@
   text-align: right;
   cursor: default;
   font-size: 10px;
-  padding: left;
   -webkit-transition: all 0.26s ease-out;
   transition: all 0.26s ease-out;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -28,7 +38,7 @@
     position: absolute;
     bottom: 100%;
     right: 15px;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid var(--main-accessibility-color);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent; }
   .accessibility-panel .lines {
@@ -49,12 +59,12 @@
       border-bottom: 1px solid black;
       font-size: 1.7rem; }
       .accessibility-panel .lines li.first {
-        background: red;
+        background: var(--main-accessibility-color);
         color: white;
         border-bottom: 0;
         padding-right: 60px; }
         .accessibility-panel .lines li.first:hover {
-          background: red; }
+          background: var(--main-accessibility-color); }
       .accessibility-panel .lines li.last {
         border-bottom: 0; }
       .accessibility-panel .lines li .a-square {
@@ -71,10 +81,10 @@
         -webkit-transition: all 0.26s ease-out;
         transition: all 0.26s ease-out; }
         .accessibility-panel .lines li .a-square:hover {
-          background: red;
+          background: var(--main-accessibility-color);
           color: white; }
         .accessibility-panel .lines li .a-square.active {
-          background: red;
+          background: var(--main-accessibility-color);
           color: white; }
         .accessibility-panel .lines li .a-square.two {
           left: 40px; }
@@ -369,202 +379,202 @@ body.go-l-c {
 
 body.go-d-c {
   background: black !important;
-  color: yellow !important; }
+  color: var(--contrast-accessibility-color) !important; }
   body.go-d-c.focus-effects *:focus {
-    outline: solid yellow !important;
+    outline: solid var(--contrast-accessibility-color) !important;
     background: black !important;
-    border: 2px solid yellow !important;
-    color: yellow !important; }
+    border: 2px solid var(--contrast-accessibility-color) !important;
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .accessibility-panel {
-    border: 1px solid yellow !important;
+    border: 1px solid var(--contrast-accessibility-color) !important;
     background: black !important;
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .accessibility-panel .lines li {
-      border-color: yellow !important; }
+      border-color: var(--contrast-accessibility-color) !important; }
       body.go-d-c .accessibility-panel .lines li.first {
-        background: yellow !important;
+        background: var(--contrast-accessibility-color) !important;
         color: black !important; }
         body.go-d-c .accessibility-panel .lines li.first .fa-times {
-          color: yellow !important; }
+          color: var(--contrast-accessibility-color) !important; }
       body.go-d-c .accessibility-panel .lines li .a-square {
         background: black !important;
-        border-color: yellow !important;
+        border-color: var(--contrast-accessibility-color) !important;
         border-bottom: 1px solid; }
         body.go-d-c .accessibility-panel .lines li .a-square:hover {
-          background: yellow !important;
+          background: var(--contrast-accessibility-color) !important;
           color: black !important; }
         body.go-d-c .accessibility-panel .lines li .a-square.active {
-          background: yellow !important;
+          background: var(--contrast-accessibility-color) !important;
           color: black !important; }
   body.go-d-c .front-list li.front-section {
     background: black !important; }
   body.go-d-c .button {
-    border: 1px solid yellow !important;
+    border: 1px solid var(--contrast-accessibility-color) !important;
     background: black !important;
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .left-panel .item {
-    color: yellow !important;
-    border-color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important;
+    border-color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .left-panel .item:hover {
-      color: yellow !important; }
+      color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .left-panel .item:hover .ext {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .left-panel .item .ext .child:hover {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .menu-button {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .menu-button:hover {
-      border-color: yellow !important;
+      border-color: var(--contrast-accessibility-color) !important;
       background: transparent !important; }
   body.go-d-c .menu-button .inner .line {
-    background: yellow !important; }
+    background: var(--contrast-accessibility-color) !important; }
   body.go-d-c .menu-container {
     background: black !important;
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .menu-container .inner-left .giftcard {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .menu-container .inner-left .giftcard:hover {
-      border-color: yellow !important; }
+      border-color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .mishlohim-menu {
-    border-color: yellow !important;
-    color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important;
+    color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .mishlohim-menu:hover {
-      border-color: yellow !important; }
+      border-color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .langs .lang {
-    border-color: yellow !important;
-    color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important;
+    color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .langs .lang:hover {
-      border-color: yellow !important; }
+      border-color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .langs .lang.active {
-      border-color: yellow !important; }
+      border-color: var(--contrast-accessibility-color) !important; }
   body.go-d-c header {
-    border-bottom: 1px solid yellow; }
+    border-bottom: 1px solid var(--contrast-accessibility-color); }
   body.go-d-c .book-container .image .overlay {
     background: black !important; }
   body.go-d-c .book-container ul li {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .book-container ul li:hover {
       background: black !important;
-      color: yellow !important; }
+      color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .book-container ul li .inner {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container, body.go-d-c footer, body.go-d-c footer .thetwo {
     background: black !important;
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c footer {
-    border-top: 1px solid yellow !important; }
+    border-top: 1px solid var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.rest .content .rest-details {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.rest .content .menus .menu-inner .menu {
     background: black !important;
-    color: yellow !important;
-    border-color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important;
+    border-color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.rest .content .menus .menu-inner .menu .row {
-    border-top: 1px solid yellow !important; }
+    border-top: 1px solid var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.rest .cover .overlay .headline {
     background: black !important;
-    color: yellow !important;
-    border: 1px solid yellow !important;
+    color: var(--contrast-accessibility-color) !important;
+    border: 1px solid var(--contrast-accessibility-color) !important;
     padding: 20px !important; }
   body.go-d-c .section {
     background: black !important;
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.about .about-segev-headline {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .container.about .about-segev-headline span {
-      color: yellow !important; }
+      color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .menu-container .menu-items li.active, body.go-d-c .menu-container .menu-items li:hover {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.recipes .recipe-main {
-    border: 1px solid yellow; }
+    border: 1px solid var(--contrast-accessibility-color); }
     body.go-d-c .container.recipes .recipe-main:hover .headline {
       background: black !important;
-      color: yellow !important;
-      border: 1px solid yellow !important; }
+      color: var(--contrast-accessibility-color) !important;
+      border: 1px solid var(--contrast-accessibility-color) !important; }
   body.go-d-c #go-filter {
-    border: 1px solid yellow !important; }
+    border: 1px solid var(--contrast-accessibility-color) !important; }
     body.go-d-c #go-filter:hover {
-      color: yellow !important; }
+      color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .rec-filters {
     background: black !important;
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .rec-filter {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .rec-filter:hover {
-      background: yellow !important;
+      background: var(--contrast-accessibility-color) !important;
       color: black !important; }
     body.go-d-c .rec-filter.active {
-      background: yellow !important;
+      background: var(--contrast-accessibility-color) !important;
       color: black !important; }
   body.go-d-c .container.recipes .recipe-main .headline {
     background: black !important;
-    color: yellow !important;
-    border: 1px solid yellow !important; }
+    color: var(--contrast-accessibility-color) !important;
+    border: 1px solid var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.recipe .content .headline, body.go-d-c .container.recipe .content .ingrids .lil-title, body.go-d-c .container.recipe .content .recipe-shares {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.recipe .content .recipe-shares i {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
     body.go-d-c .container.recipe .content .recipe-shares i:hover {
-      background: yellow !important;
+      background: var(--contrast-accessibility-color) !important;
       color: black !important; }
   body.go-d-c .gform_wrapper .gform_footer input.button {
-    background: yellow !important;
+    background: var(--contrast-accessibility-color) !important;
     color: black !important;
-    border: 1px solid yellow !important; }
+    border: 1px solid var(--contrast-accessibility-color) !important; }
     body.go-d-c .gform_wrapper .gform_footer input.button:hover {
       background-color: black !important;
-      color: yellow !important; }
+      color: var(--contrast-accessibility-color) !important; }
   body.go-d-c #gform_submit_button_1:hover {
     background-color: black !important;
-    color: yellow !important;
-    border: 1px solid yellow !important; }
+    color: var(--contrast-accessibility-color) !important;
+    border: 1px solid var(--contrast-accessibility-color) !important; }
   body.go-d-c .container.contact .content .order-from-contact:hover {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c ::-webkit-input-placeholder {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c ::-moz-placeholder {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c :-ms-input-placeholder {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c :-moz-placeholder {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c input, body.go-d-c textarea {
-    border-color: yellow !important;
-    color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important;
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c span.wpcf7-not-valid-tip {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .c-white {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container-banner .inner {
-    border-color: yellow !important; }
+    border-color: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container-banner .banner-x {
     background: black !important;
-    color: yellow !important;
-    border: 1px solid yellow !important; }
+    color: var(--contrast-accessibility-color) !important;
+    border: 1px solid var(--contrast-accessibility-color) !important; }
   body.go-d-c .container-banner .banner-x .inner {
     background: transparent !important; }
   body.go-d-c .container-banner .banner-x .inner .line {
-    background: yellow !important; }
+    background: var(--contrast-accessibility-color) !important; }
   body.go-d-c .container-banner .inner .left .wrapper, body.go-d-c .container-banner .inner .right .wrapper {
     background: black !important;
-    color: yellow !important;
-    border: 1px solid yellow !important; }
+    color: var(--contrast-accessibility-color) !important;
+    border: 1px solid var(--contrast-accessibility-color) !important; }
     body.go-d-c .container-banner .inner .left .wrapper img, body.go-d-c .container-banner .inner .right .wrapper img {
-      background: yellow !important; }
+      background: var(--contrast-accessibility-color) !important; }
   body.go-d-c .opening .logo {
     background: black !important;
-    border: 1px solid yellow !important;
+    border: 1px solid var(--contrast-accessibility-color) !important;
     padding: 20px !important; }
   body.go-d-c .left-panel .item#accessibility-button:hover .fa-universal-access {
-    color: yellow !important; }
+    color: var(--contrast-accessibility-color) !important; }
 
 body *:focus {
   outline: none !important; }
 
 body.focus-effects *:focus {
-  outline: solid red !important;
-  background: red !important;
-  border: 2px solid red !important;
+  outline: solid var(--main-accessibility-color) !important;
+  background: var(--main-accessibility-color) !important;
+  border: 2px solid var(--main-accessibility-color) !important;
   color: white !important; }
   body.focus-effects *:focus a, body.focus-effects *:focus h6, body.focus-effects *:focus h5, body.focus-effects *:focus h4, body.focus-effects *:focus h3, body.focus-effects *:focus h2, body.focus-effects *:focus h1, body.focus-effects *:focus p, body.focus-effects *:focus li, body.focus-effects *:focus div, body.focus-effects *:focus span {
     color: white !important; }

@@ -13,21 +13,48 @@ class Thetwoaccessibility_Plugin extends Thetwoaccessibility_LifeCycle
     public function getOptionMetaData()
     {
         $menus = $this->getAllMenusName();
+        $fa_icons = $this->getAllFaIcons();
+
         //  http://plugin.michael-simpson.com/?page_id=31
         return array(
             //'_version' => array('Installed Version'), // Leave this one commented-out. Uncomment to test upgrades.
-            // 'display_accessibility_button' => array(__('Accessibility Button Should Display', 'my-awesome-plugin'), 'false', 'true'),
-            'remove_accessibility_style' => array(__('Remove Accessibility CSS', 'thetwoaccessibility'), 'false', 'true'),
-            'absolute_top_position' => array(__('What Should Be The Absolute Top Position Of The Accessibility Panel', 'thetwoaccessibility'), "10px", "calc(100% + 15px)"),
+            'display_accessibility_button' => array(__('Display Accessibility Button On Menu End Or On Absolute Position?', 'thetwoaccessibility'), 'Menu', 'Absolute'),
             'accessibility_on_menu_end' => array_merge(array(
-                __('on Which Menu Should Accessibility Button Appear?', 'thetwoaccessibility'), 'none'
-            ), $menus)
+                __('Select Menu For The Display Accessibility Button', 'thetwoaccessibility'), 'none'
+            ), $menus),
+
+            'button_absolute_top' => array(__('Absolute Top Position For The Button ', 'thetwoaccessibility')),
+            'button_absolute_right' => array(__('Absolute Top Position For The Button ', 'thetwoaccessibility')),
+            'button_absolute_left' => array(__('Absolute Top Position For The Button ', 'thetwoaccessibility')),
+            'button_absolute_bottom' => array(__('Absolute Top Position For The Button ', 'thetwoaccessibility')),
+            'button_absolute_size' => array(__('Height And Width Of The Button (px only) ', 'thetwoaccessibility')),
+            'remove_accessibility_style' => array(__('Remove Accessibility CSS', 'thetwoaccessibility'), 'false', 'true'),
+            'panel_absolute_top_position' => array(__('What Should Be The Absolute Top Position Of The Accessibility Panel', 'thetwoaccessibility'), "10px", "calc(100% + 15px)"),
+            'button_fa_icon' => array_merge(array(
+                __('Chose Font Awesome Icon For Button', 'thetwoaccessibility'), 'fas fa-universal-access'
+            ), $fa_icons),
         );
     }
 
     public function getAllMenusName()
     {
         return get_registered_nav_menus();
+    }
+
+    public function getAllFaIcons()
+    {
+
+        function array_delete($array, $element)
+        {
+            return (is_array($element)) ? array_values(array_diff($array, $element)) : array_values(array_diff($array, array($element)));
+        }
+        $resp = file_get_contents('css/fontawesome-free-5.10.1-web/css/all.css', FILE_USE_INCLUDE_PATH);
+        preg_match_all("/fa\-([a-zA-z0-9\-]+[^:before])/", $resp, $matches);
+        $exclude_icons = array("fa-lg", "fa-2x", "fa-3x", "fa-4x", "fa-5x", "fa-ul", "fa-li", "fa-fw", "fa-border", "fa-pulse", "fa-rotate-90", "fa-rotate-180", "fa-rotate-270", "fa-spin", "fa-flip-horizontal", "fa-flip-vertical", "fa-stack", "fa-stack-1x", "fa-stack-2x", "fa-inverse", "fa-regular-400");
+        $only_good_icons = array_delete($matches[0], $exclude_icons);
+
+
+        return $only_good_icons;
     }
 
     //    protected function getOptionValueI18nString($optionValue) {
@@ -121,7 +148,8 @@ class Thetwoaccessibility_Plugin extends Thetwoaccessibility_LifeCycle
         }
         function thetwoaccessibility_enqueue_fontawesome()
         {
-            wp_enqueue_script('prefix-font-awesome', '//kit.fontawesome.com/ec155ed69e.js', array(), '5.10.1'); // load font awesome
+            wp_enqueue_style('fa-all', plugins_url('/css/fontawesome-free-5.10.1-web/css/all.css', __FILE__));
+            // wp_enqueue_script('prefix-font-awesome', '//kit.fontawesome.com/ec155ed69e.js', array(), '5.10.1'); // load font awesome
         }
 
         function thetwoaccessibility_enqueue_script()

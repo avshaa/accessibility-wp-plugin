@@ -1,8 +1,22 @@
 /*********** thetwoaccessibility *****************/
 @import 'mixins';
 
-$yellow: yellow;
-$red : red;
+$yellow: var(--contrast-accessibility-color);
+$red : var(--main-accessibility-color);
+
+.accessibility-button-absolute{
+    max-height:50px;
+    max-width:50px;
+    position: absolute;
+    >div{
+        cursor: pointer;
+        height:100%;
+        line-height:50px;
+        i{
+            font-size:50px;
+        }
+    }
+} 
 
 .accessibility-panel {
     position: absolute;
