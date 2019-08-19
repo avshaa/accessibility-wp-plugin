@@ -24,9 +24,9 @@ class Thetwoaccessibility_Plugin extends Thetwoaccessibility_LifeCycle
             ), $menus),
 
             'button_absolute_top' => array(__('Absolute Top Position For The Button ', 'thetwoaccessibility')),
-            'button_absolute_right' => array(__('Absolute Top Position For The Button ', 'thetwoaccessibility')),
-            'button_absolute_left' => array(__('Absolute Top Position For The Button ', 'thetwoaccessibility')),
-            'button_absolute_bottom' => array(__('Absolute Top Position For The Button ', 'thetwoaccessibility')),
+            'button_absolute_right' => array(__('Absolute Right Position For The Button ', 'thetwoaccessibility')),
+            'button_absolute_left' => array(__('Absolute Left Position For The Button ', 'thetwoaccessibility')),
+            'button_absolute_bottom' => array(__('Absolute Bottom Position For The Button ', 'thetwoaccessibility')),
             'button_absolute_size' => array(__('Height And Width Of The Button (px only) ', 'thetwoaccessibility')),
             'remove_accessibility_style' => array(__('Remove Accessibility CSS', 'thetwoaccessibility'), 'false', 'true'),
             'panel_absolute_top_position' => array(__('What Should Be The Absolute Top Position Of The Accessibility Panel', 'thetwoaccessibility'), "10px", "calc(100% + 15px)"),

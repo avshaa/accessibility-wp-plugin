@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: thetwoaccessibility\n"
+"POT-Creation-Date: 2019-08-19 14:44+0300\n"
+"PO-Revision-Date: 2019-08-19 14:44+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? 2 : "
+"3);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Thetwoaccessibility_OptionsManager.php:286
+msgid "You do not have sufficient permissions to access this page."
+msgstr "אין לך הרשאות לדף זה."
+
+#: Thetwoaccessibility_OptionsManager.php:304
+msgid "System Settings"
+msgstr "הגדרות מערכת"
+
+#: Thetwoaccessibility_OptionsManager.php:308
+msgid "System"
+msgstr "מערכת"
+
+#: Thetwoaccessibility_OptionsManager.php:312
+msgid "PHP Version"
+msgstr "גרסת PHP"
+
+#: Thetwoaccessibility_OptionsManager.php:317
+msgid ""
+"(WARNING: This plugin may not work properly with versions earlier than PHP 5.2)"
+msgstr "(אזהרה: תוסף זה עשוי שלא לפעול כראוי עם גירסאות קודמות מ-PHP 5.2)"
+
+#: Thetwoaccessibility_OptionsManager.php:324
+msgid "MySQL Version"
+msgstr "גרסת mysql"
+
+#: Thetwoaccessibility_OptionsManager.php:329
+msgid ""
+"(WARNING: This plugin may not work properly with versions earlier than MySQL "
+"5.0)"
+msgstr "(אזהרה: הפלאגין הזה לא יעבוד כהלכה עם גרסאות מוקדמות יותר מ MySQL 5‪.‬0‫)"
+
+#: Thetwoaccessibility_OptionsManager.php:340 thetwoaccessibility.php:88
+msgid "Settings"
+msgstr "הגדרות"
+
+#: Thetwoaccessibility_OptionsManager.php:397
+msgid "Save Changes"
+msgstr "שמירת שניויים"
+
+#: Thetwoaccessibility_OptionsManager.php:455
+msgid "true"
+msgstr "כן"
+
+#: Thetwoaccessibility_OptionsManager.php:457
+msgid "false"
+msgstr "לא"
+
+#: Thetwoaccessibility_OptionsManager.php:460
+msgid "Administrator"
+msgstr "מנהל"
+
+#: Thetwoaccessibility_OptionsManager.php:462
+msgid "Editor"
+msgstr "עורך"
+
+#: Thetwoaccessibility_OptionsManager.php:464
+msgid "Author"
+msgstr "כותב"
+
+#: Thetwoaccessibility_OptionsManager.php:466
+msgid "Contributor"
+msgstr "תורם"
+
+#: Thetwoaccessibility_OptionsManager.php:468
+msgid "Subscriber"
+msgstr "רשום"
+
+#: Thetwoaccessibility_OptionsManager.php:470
+msgid "Anyone"
+msgstr "כל אחד"
+
+#: Thetwoaccessibility_Plugin.php:21
+msgid "Display Accessibility Button On Menu End Or On Absolute Position?"
+msgstr "הצגת כפתור הנגישות בסוף תפריט או מרחף בדף?"
+
+#: Thetwoaccessibility_Plugin.php:23
+msgid "Select Menu For The Display Accessibility Button"
+msgstr "בחירת תפריט עבור כפתור הנגישות"
+
+#: Thetwoaccessibility_Plugin.php:26
+msgid "Absolute Top Position For The Button "
+msgstr "מיקום עליון של הכפתור "
+
+#: Thetwoaccessibility_Plugin.php:27
+msgid "Absolute Right Position For The Button "
+msgstr "מיקום ימני של הכפתור "
+
+#: Thetwoaccessibility_Plugin.php:28
+msgid "Absolute Left Position For The Button "
+msgstr "מיקום שמאלי של הכפתור "
+
+#: Thetwoaccessibility_Plugin.php:29
+msgid "Absolute Bottom Position For The Button "
+msgstr "מיקום תחתון של הכפתור "
+
+#: Thetwoaccessibility_Plugin.php:30
+msgid "Height And Width Of The Button (px only) "
+msgstr "רוחב וגובה של הכפתור (פיקסלים בלבד) "
+
+#: Thetwoaccessibility_Plugin.php:31
+msgid "Remove Accessibility CSS"
+msgstr "לא להשתמש ב CSS של הפלאגין"
+
+#: Thetwoaccessibility_Plugin.php:32
+msgid "What Should Be The Absolute Top Position Of The Accessibility Panel"
+msgstr "מהו ערך הtop במיקום האבסולוטי של פאנל הנגישות"
+
+#: Thetwoaccessibility_Plugin.php:34
+msgid "Chose Font Awesome Icon For Button"
+msgstr "בחירת איקון לכפתור"
+
+#: thetwoaccessibility.php:44
+msgid ""
+"Error: plugin \"TheTwoAccessibility\" requires a newer version of PHP to be "
+"running."
+msgstr "שגיאה: הפלאגין דורש גרסא חדשה יותר של PHP."
+
+#: thetwoaccessibility.php:45
+msgid "Minimal version of PHP required: "
+msgstr "דרישות גרסא מינימליות של PHP: "
+
+#: thetwoaccessibility.php:46
+msgid "Your server's PHP version: "
+msgstr "גרסאת הPHP בשרת שלך: "
+
+#: thetwoaccessibility_frontPanel.php:8
+msgid "Accessibility tools"
+msgstr "כלי נגישות"
+
+#: thetwoaccessibility_frontPanel.php:12
+msgid "Font size"
+msgstr "גודל פונט"
+
+#: thetwoaccessibility_frontPanel.php:24
+msgid "Underline links"
+msgstr "קישורים מודגשים"
+
+#: thetwoaccessibility_frontPanel.php:31
+msgid "Dark contrast"
+msgstr "ניגודיות כהה"
+
+#: thetwoaccessibility_frontPanel.php:38
+msgid "Light contrast"
+msgstr "ניגודיות בהירה"
+
+#: thetwoaccessibility_frontPanel.php:45
+msgid "Black & white"
+msgstr "שחור לבן"
+
+#: thetwoaccessibility_frontPanel.php:52
+msgid "Simple font"
+msgstr "פונט פשוט"
+
+#: thetwoaccessibility_frontPanel.php:60
+msgid "Highlight tabs"
+msgstr "ניווט מקלדת"
